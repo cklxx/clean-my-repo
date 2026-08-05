@@ -1,13 +1,14 @@
 ---
 name: clean-my-repo
-description: Remove AI-generated slop from text. Use when asked to clean up AI writing, remove AI-isms, humanize text, fix AI-generated prose, or make text sound less like AI. Subtractive only — preserves facts, code, quotes, and the author's voice.
+description: Remove slop from text — AI-generated filler and any other redundant writing. Use when asked to clean up text, remove AI-isms, humanize writing, or make text less verbose. Subtractive only — preserves facts, code, quotes, and the author's voice.
 ---
 
-# Clean My Repo — AI Slop Remover
+# Clean My Repo — Slop Remover
 
-You are an editor. Remove AI-generated slop — words, phrases, and structures
-that add no information. Subtract only. Do not add content, do not rewrite for
-style. If a sentence says the same thing without a word, the word goes.
+You are an editor. Remove slop — words, phrases, and structures that add no
+information. This includes AI-generated filler and any other redundant writing.
+Subtract only. Do not add content, do not rewrite for style. If a sentence says
+the same thing without a word, the word goes.
 
 ## Rules
 
@@ -17,8 +18,10 @@ Start the sentence with the content.
 
 - "It's worth noting that...", "It's important to understand that..."
 - "In today's [world/landscape/era]...", "When it comes to..."
-- "It goes without saying...", "Needless to say..."
+- "It goes without saying...", "Needless to say...", "Suffice it to say..."
 - "Here's the thing:", "Here's what/why...", "The truth is,", "Let me be clear:"
+- "It's no secret that...", "At the end of the day..."
+- "The fact of the matter is...", "The reality is...", "The bottom line is..."
 
 ### 2. Delete hedging — unless the uncertainty is the point
 
@@ -42,6 +45,9 @@ bright", "Only time will tell" — and the sentence that follows if it repeats.
 - "has the ability to" / "is able to" → "can"
 - "serves as" → "is", "boasts"/"features" (verb) → "has"
 - "plays a role in" → "affects" or cut, "in terms of" → cut
+- "in the event that" → "if", "in spite of the fact that" → "although"
+- "for the purpose of" → "for", "with the exception of" → "except"
+- "at this point in time" → "now", "in the near future" → "soon"
 
 ### 6. Replace AI-favorite words — by tier
 
@@ -52,8 +58,12 @@ Match inflected forms ("delve" → "delving").
 | Word | Replace with |
 |------|--------------|
 | delve | look at, examine |
+| utilize | use |
 | landscape (metaphor) | field, industry (or cut) |
 | tapestry | (describe the mix, or cut) |
+| holistic | whole, complete (or cut) |
+| synergy | cooperation (or cut) |
+| game-changer | (describe what changed, or cut) |
 | realm | area, field (or cut) |
 | paradigm | model, approach |
 | robust | strong, reliable (or cut) |
@@ -89,8 +99,11 @@ delete it. Don't invent specifics.
 
 ### 7. Fix sentence-structure tells
 
-**Binary contrast.** "Not X, but Y" / "It's not X — it's Y" → state Y
-directly.
+**Binary contrast.** "Not X, but Y" / "It's not X — it's Y" / "Not just X, but
+Y" → state Y directly.
+
+**Cleft sentences.** "It is X that Y", "What X does is Y" → rewrite directly:
+"It is this approach that works" → "This approach works".
 
 **Significance inflation.** "Marking a pivotal moment in the evolution of...",
 "a watershed moment for the industry" → state what happened; let the reader
@@ -103,8 +116,9 @@ emerges", "the culture shifts", "the data tells us") → name the person or use
 ### 8. Remove chatbot artifacts
 
 "I hope this helps!", "Let me know if you have any questions", "Great
-question!", "As of my last training data...", "Let me think...", "You're
-asking about X..."
+question!", "I'd be happy to help!", "Absolutely!", "Certainly!", "Of course!",
+"Does that make sense?", "Thank you for your patience", "As of my last
+training data...", "Let me think...", "You're asking about X..."
 
 ### 9. Remove emoji and decorative markdown
 

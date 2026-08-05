@@ -14,8 +14,14 @@ Delete. Start with the content.
 | When it comes to X, Y | Y |
 | It goes without saying that X | X |
 | Needless to say, X | X |
+| Suffice it to say, X | X |
 | Here's the thing: X / Here's what/why X | X |
 | The truth is, X / Let me be clear: X | X |
+| It's no secret that X | X |
+| At the end of the day, X | X |
+| The fact of the matter is X | X |
+| The reality is X | X |
+| The bottom line is X | X |
 
 ## Hedging
 
@@ -42,6 +48,12 @@ Cut unless the uncertainty is the point.
 | boasts / features (verb) | has |
 | plays a role in | affects (or cut) |
 | in terms of | cut |
+| in the event that | if |
+| in spite of the fact that | although |
+| for the purpose of | for |
+| with the exception of | except |
+| at this point in time | now |
+| in the near future | soon |
 | a significant amount of | much / many |
 | a wide variety of | many |
 | prior to | before |
@@ -56,8 +68,12 @@ Cut unless the uncertainty is the point.
 | Slop | Replace with |
 |------|--------------|
 | delve | look at, examine |
+| utilize | use |
 | landscape | field, industry (or cut) |
 | tapestry | (describe the mix, or cut) |
+| holistic | whole, complete (or cut) |
+| synergy | cooperation (or cut) |
+| game-changer | (describe what changed, or cut) |
 | realm | area, field (or cut) |
 | paradigm | model, approach |
 | robust | strong, reliable (or cut) |
@@ -84,6 +100,12 @@ Cut unless the uncertainty is the point.
 | nuanced | specific, detailed (or name the nuance) |
 | crucial | important, key |
 | transformative | (describe what changed) |
+| drive (verb) | cause, lead to (or cut) |
+| unlock | reveal, enable (or cut) |
+| fuel | cause, increase (or cut) |
+| actionable | specific, concrete (or cut) |
+| ecosystem | system, network (or cut) |
+| end-to-end | complete, full (or cut) |
 
 **Tier 3 — replace at high density.** significant, innovative, effective,
 dynamic, scalable, compelling, unprecedented, sophisticated, state-of-the-art
@@ -103,7 +125,10 @@ seen, The future looks bright, Only time will tell.
 
 ## Sentence-structure tells
 
-**Binary contrast.** "Not X, but Y" / "It's not X — it's Y" → state Y.
+**Binary contrast.** "Not X, but Y" / "It's not X — it's Y" / "Not just X, but Y"
+→ state Y.
+
+**Cleft sentences.** "It is X that Y", "What X does is Y" → rewrite directly.
 
 **Significance inflation.** "Marking a pivotal moment in the evolution of...",
 "a watershed moment" → state what happened.
@@ -115,8 +140,9 @@ use "you". "The decision emerges" → "someone decides". "People tend to..." →
 ## Chatbot artifacts
 
 Delete. "I hope this helps!", "Let me know if you have any questions", "Great
-question!", "As of my last training data...", "Let me think...", "You're
-asking about X...".
+question!", "I'd be happy to help!", "Absolutely!", "Certainly!", "Of course!",
+"Does that make sense?", "Thank you for your patience", "As of my last
+training data...", "Let me think...", "You're asking about X...".
 
 ## Emoji and decoration
 

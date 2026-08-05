@@ -1,14 +1,14 @@
 # clean-my-repo
 
-Prompts to clean AI-generated slop from text. Fast, safe, subtractive.
+Prompts to clean slop from text and code. Fast, safe, subtractive.
 
 ## What it does
 
-AI writes filler that sounds like writing but says nothing: "It's worth
+AI and careless writing produce filler that says nothing: "It's worth
 noting that", "in today's rapidly evolving landscape", "leverage", "tapestry",
-"Furthermore,", "In conclusion,". This prompt deletes it.
+"Furthermore,", "In conclusion,". These prompts delete it.
 
-It subtracts — it never adds content, never rewrites for style, never invents
+They subtract — never add content, never rewrite for style, never invent
 specifics. Facts, numbers, names, dates, code, quotes, and the author's actual
 argument are preserved.
 
@@ -93,7 +93,7 @@ Or paste `prompt-code.md` into your agent with the code to clean.
 - **AI-favorite words** — "delve", "tapestry", "landscape", "leverage", "harness"
   (tiered by how strongly they signal AI text)
 - **Sentence-structure tells** — "Not X, but Y", significance inflation,
-  false agency ("the decision emerges"), narrator-from-a-distance
+  false agency ("the decision emerges"), cleft sentences ("It is X that Y")
 - **Chatbot artifacts** — "I hope this helps!", "Great question!"
 - **Emoji and decorative markdown** — 🚀✨🔥, excessive bold, curly quotes
 - **Redundant summaries** — "In conclusion", "The future looks bright"
