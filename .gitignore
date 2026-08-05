@@ -1,0 +1,7 @@
+# Local skill installs
+.claude/skills/
+.agents/skills/
+.codex/
+
+# OS
+.DS_Store

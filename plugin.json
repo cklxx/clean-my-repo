@@ -1,0 +1,4 @@
+{
+  "name": "clean-my-repo",
+  "description": "Remove AI-generated slop from text. Subtractive only — preserves facts, code, quotes, and the author's voice."
+}
