@@ -10,10 +10,9 @@ it's slop — delete it. If the behavior changes, keep it. When in doubt, keep i
 Subtract only. Do not add features, do not change behavior, do not rewrite for
 style.
 
-## Rules
+## Rules — common slop patterns, grouped by type
 
-The rules below are common slop patterns, grouped by type. For anything not
-listed, apply the test above.
+For anything not listed, apply the test above.
 
 ### Zero-information comments — delete, they add no information
 
@@ -84,7 +83,7 @@ Replace with the direct implementation.
 
 Keep error handling that prevents data loss or handles real failure modes.
 
-## Preserve
+## Preserve — hard constraints, never delete these
 
 - Logic and behavior — the cleaned code must produce the same output
 - Public APIs — don't change function signatures, return types, or side
@@ -94,7 +93,7 @@ Keep error handling that prevents data loss or handles real failure modes.
   workarounds for bugs)
 - Type hints on public APIs
 
-## Output
+## Output — how to deliver the result
 
 Output only the cleaned code. No explanations, no diff markers. Preserve
 indentation, syntax, and structure. If you're unsure whether something is

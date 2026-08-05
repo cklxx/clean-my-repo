@@ -14,10 +14,9 @@ it's slop — delete it. If the meaning changes, keep it. When in doubt, keep it
 
 Subtract only. Do not add content, do not rewrite for style.
 
-## Rules
+## Rules — common slop patterns, grouped by type
 
-The rules below are common slop patterns, grouped by type. For anything not
-listed, apply the test above.
+For anything not listed, apply the test above.
 
 ### Zero-information tokens — delete, they carry no meaning
 
@@ -131,7 +130,7 @@ Paragraphs with no factual claim, opinion, or instruction → cut.
 warning). 🚀✨🔥💡⭐ go. Curly quotes (" " ' ') in plain text and code → straight
 quotes.
 
-## Preserve
+## Preserve — hard constraints, never delete these
 
 - Facts: numbers, names, dates, places, code, commands, URLs
 - The author's actual argument, opinion, or instruction
@@ -139,7 +138,7 @@ quotes.
 - Intentional tone (sarcasm, urgency, formality) and intentional ambiguity
   (legal disclaimers, predictions)
 
-## Output
+## Output — how to deliver the result
 
 Read the whole text once. Go sentence by sentence: "What is this saying?"
 Write only that. Output only the cleaned text — no preamble, no explanations,

@@ -45,14 +45,15 @@ case "$mode" in
   text|*) prompt="$PROMPT_TEXT" ;;
 esac
 
-# Output prompt + input
+# Output prompt + input with explicit boundaries
+echo "<prompt>"
 cat "$prompt"
+echo "</prompt>"
 echo
-echo "---"
-echo
-
+echo "<input>"
 if [ -n "$file" ]; then
   cat "$file"
 else
   cat
 fi
+echo "</input>"
