@@ -32,14 +32,9 @@ if [ "$mode" = "auto" ] && [ -n "$file" ]; then
   case "$file" in
     *.py|*.js|*.ts|*.jsx|*.tsx|*.go|*.rs|*.java|*.c|*.cpp|*.h|*.hpp|\
     *.rb|*.php|*.swift|*.kt|*.scala|*.sh|*.bash|*.zsh|*.fish|\
-    *.sql|*.html|*.css|*.scss|*.vue|*.svelte|*.rs|*.toml|*.yaml|*.yml|\
-    *.json|*.xml|*.proto|*.thrift|*.md|*.rst|*.tex)
-      # .md/.rst/.tex are text, not code
-      case "$file" in
-        *.md|*.rst|*.tex) mode="text" ;;
-        *) mode="code" ;;
-      esac
-      ;;
+    *.sql|*.html|*.css|*.scss|*.vue|*.svelte|*.toml|*.yaml|*.yml|\
+    *.json|*.xml|*.proto|*.thrift)
+      mode="code" ;;
     *) mode="text" ;;
   esac
 fi

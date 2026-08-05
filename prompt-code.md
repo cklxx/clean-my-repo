@@ -6,16 +6,18 @@ the same thing without a word, the word goes.
 
 ## Rules
 
-### 1. Delete restating comments
+### 1. Delete restating comments and docstrings
 
-Comments that just repeat what the code says. The code is the documentation.
+Comments/docstrings that just repeat what the code says. The code is the
+documentation.
 
 - "# Initialize x" before `x = 0`
 - "# Loop through items" before a for loop
 - "# Return the result" before `return`
-- "# Check if x" before `if x:`
-- "# Set the name" before `self.name = name`
-- "# Print the result" before `print(...)`
+- Docstrings that repeat the signature: `"""Get the user by id."""` on
+  `def get_user(user_id)`
+- Module/class docstrings with AI-favorite words ("comprehensive",
+  "robust", "leverage", "cutting-edge")
 
 Delete them. Keep comments that explain *why*, not *what*.
 
@@ -39,10 +41,11 @@ Replace with the direct implementation.
 
 ### 4. Remove redundant type hints
 
-- `name: str = "foo"` — the value makes the type obvious
-- `def add(a: int, b: int) -> int:` — obvious from context
-- Keep type hints on public APIs, ambiguous cases, or where they aid
-  readability. Remove when the value or name already says it.
+- Local variables: `name: str = "foo"` — the value makes the type obvious
+- Private methods: `def _helper(x: int) -> int:` where the body makes it obvious
+- Keep type hints on public API parameters and return types, even if the name
+  implies the type (`def add_user(user_id: str, name: str, email: str)`).
+  Remove only when the value or body already says it.
 
 ### 5. Remove excessive error handling
 

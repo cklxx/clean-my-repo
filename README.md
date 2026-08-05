@@ -53,8 +53,6 @@ Or use the install script:
 
 ## Usage
 
-## Usage
-
 ### Prose (text)
 
 Ask your agent to clean up AI-generated text. The skill triggers
