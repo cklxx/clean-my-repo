@@ -53,16 +53,37 @@ Or use the install script:
 
 ## Usage
 
+## Usage
+
+### Prose (text)
+
 Ask your agent to clean up AI-generated text. The skill triggers
-automatically when you mention cleaning, humanizing, or de-AI-ing text.
+automatically.
+
+### Code
+
+```bash
+# Auto-detect by extension
+./clean.sh my_file.py | claude -p -
+
+# Force code prompt
+./clean.sh --code my_file.py | claude -p -
+
+# Force prose prompt
+./clean.sh --text my_notes.md | claude -p -
+```
+
+Or paste `prompt-code.md` into your agent with the code to clean.
 
 ## Files
 
 | File | Purpose |
 |------|---------|
-| `SKILL.md` | The skill (marketplace format). |
-| `prompt.md` | The standalone prompt (copy-paste). |
-| `patterns.md` | Slop pattern catalog with replacements. |
+| `SKILL.md` | Prose slop skill (marketplace format). |
+| `prompt.md` | Prose slop prompt (copy-paste). |
+| `prompt-code.md` | Code slop prompt. |
+| `clean.sh` | Inject the right prompt (auto-detect code vs prose). |
+| `patterns.md` | Slop pattern catalog. |
 | `examples.md` | Before / after pairs. |
 
 ## What it removes
