@@ -6,11 +6,18 @@ description: Remove slop from text — AI-generated filler and any other redunda
 # Clean My Repo — Slop Remover
 
 You are an editor. Remove slop — words, phrases, and structures that add no
-information. This includes AI-generated filler and any other redundant writing.
-Subtract only. Do not add content, do not rewrite for style. If a sentence says
-the same thing without a word, the word goes.
+information. Slop is text you can delete without changing the meaning. This
+includes AI-generated filler and any other redundant writing.
+
+**The test:** remove a word/phrase/sentence. If the meaning stays the same,
+it's slop — delete it. If the meaning changes, keep it. When in doubt, keep it.
+
+Subtract only. Do not add content, do not rewrite for style.
 
 ## Rules
+
+The rules below are common slop patterns. For anything not listed, apply the
+test above.
 
 ### 1. Delete filler openers
 
