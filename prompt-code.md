@@ -12,13 +12,13 @@ style.
 
 ## Rules
 
-The rules below are common slop patterns. For anything not listed, apply the
-test above.
+The rules below are common slop patterns, grouped by type. For anything not
+listed, apply the test above.
 
-### 1. Delete restating comments and docstrings
+### Zero-information comments — delete, they add no information
 
-Comments/docstrings that just repeat what the code says. The code is the
-documentation.
+**Restating comments and docstrings.** Comments/docstrings that just repeat
+what the code says. The code is the documentation.
 
 - "# Initialize x" before `x = 0`
 - "# Loop through items" before a for loop
@@ -28,9 +28,17 @@ documentation.
 - Module/class docstrings with AI-favorite words ("comprehensive",
   "robust", "leverage", "cutting-edge")
 
-Delete them. Keep comments that explain *why*, not *what*.
+Keep comments that explain *why*, not *what*.
 
-### 2. Delete dead code
+**Empty TODO/FIXME.**
+
+- `# TODO:` with no content
+- `# FIXME:` with no explanation
+- `# HACK:`, `# XXX:`, `# WIP:` with no real note
+
+Keep TODOs that have a specific, actionable note.
+
+### Dead code — delete, it doesn't execute
 
 - Unused variables, imports, functions, classes
 - Unreachable branches (after return, raise, break)
@@ -38,7 +46,9 @@ Delete them. Keep comments that explain *why*, not *what*.
 - `pass` in functions that could be removed
 - Unnecessary intermediate variables: `x = expr; return x` → `return expr`
 
-### 3. Remove over-engineering
+### Over-engineering — simplify, more complex than needed
+
+**Unnecessary abstractions.**
 
 - One-use abstractions (interface with one implementation, factory for one
   product, base class with one subclass)
@@ -49,7 +59,16 @@ Delete them. Keep comments that explain *why*, not *what*.
 
 Replace with the direct implementation.
 
-### 4. Remove redundant type hints
+**Boilerplate.**
+
+- Getters/setters that just read/write a field (use the field directly)
+- `if __name__ == "__main__": main()` when `main()` is the only function
+- `__init__` that just stores parameters without validation
+- Constructor over-injection when a direct import is simpler
+
+### Redundant specification — remove, already implied by code
+
+**Redundant type hints.**
 
 - Local variables: `name: str = "foo"` — the value makes the type obvious
 - Private methods: `def _helper(x: int) -> int:` where the body makes it obvious
@@ -57,26 +76,13 @@ Replace with the direct implementation.
   implies the type (`def add_user(user_id: str, name: str, email: str)`).
   Remove only when the value or body already says it.
 
-### 5. Remove excessive error handling
+**Excessive error handling.**
 
 - `try/except` that just re-raises the same exception
 - `try/except: pass` that swallows errors silently
 - Error handling for cases that can't happen
-- Keep error handling that prevents data loss or handles real failure modes.
 
-### 6. Delete empty AI TODO/FIXME
-
-- `# TODO:` with no content
-- `# FIXME:` with no explanation
-- `# HACK:`, `# XXX:`, `# WIP:` with no real note
-- Keep TODOs that have a specific, actionable note.
-
-### 7. Remove boilerplate
-
-- Getters/setters that just read/write a field (use the field directly)
-- `if __name__ == "__main__": main()` when `main()` is the only function
-- `__init__` that just stores parameters without validation
-- Constructor over-injection when a direct import is simpler
+Keep error handling that prevents data loss or handles real failure modes.
 
 ## Preserve
 

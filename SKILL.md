@@ -16,12 +16,12 @@ Subtract only. Do not add content, do not rewrite for style.
 
 ## Rules
 
-The rules below are common slop patterns. For anything not listed, apply the
-test above.
+The rules below are common slop patterns, grouped by type. For anything not
+listed, apply the test above.
 
-### 1. Delete filler openers
+### Zero-information tokens — delete, they carry no meaning
 
-Start the sentence with the content.
+**Filler openers.** Start the sentence with the content.
 
 - "It's worth noting that...", "It's important to understand that..."
 - "In today's [world/landscape/era]...", "When it comes to..."
@@ -30,22 +30,23 @@ Start the sentence with the content.
 - "It's no secret that...", "At the end of the day..."
 - "The fact of the matter is...", "The reality is...", "The bottom line is..."
 
-### 2. Delete hedging — unless the uncertainty is the point
+**Formulaic transitions.** "Furthermore", "Moreover", "Additionally", "In
+addition", "Consequently", "Therefore", sentence-initial "However" → replace
+with a period.
 
-"May", "might", "could", "can be considered", "tends to", "is often" — cut
-if the author means "is". Don't stack hedges: "could potentially" → pick one.
+**Chatbot artifacts.** "I hope this helps!", "Let me know if you have any
+questions", "Great question!", "I'd be happy to help!", "Absolutely!",
+"Certainly!", "Of course!", "Does that make sense?", "Thank you for your
+patience", "As of my last training data...", "Let me think...", "You're asking
+about X..."
 
-### 3. Delete formulaic transitions
+### Low-information inflation — shrink or replace, they say less than they seem
 
-"Furthermore", "Moreover", "Additionally", "In addition", "Consequently",
-"Therefore", sentence-initial "However" → replace with a period.
+**Hedging** — unless the uncertainty is the point. "May", "might", "could",
+"can be considered", "tends to", "is often" — cut if the author means "is".
+Don't stack hedges: "could potentially" → pick one.
 
-### 4. Delete summaries that restate
-
-"In conclusion", "To sum up", "In summary", "Overall", "The future looks
-bright", "Only time will tell" — and the sentence that follows if it repeats.
-
-### 5. Shrink verbose phrases
+**Verbose phrases.**
 
 - "in order to" → "to", "due to the fact that" → "because"
 - "a large number of" → "many", "the majority of" → "most"
@@ -56,11 +57,9 @@ bright", "Only time will tell" — and the sentence that follows if it repeats.
 - "for the purpose of" → "for", "with the exception of" → "except"
 - "at this point in time" → "now", "in the near future" → "soon"
 
-### 6. Replace AI-favorite words — by tier
+**AI-favorite words** — by tier. Match inflected forms ("delve" → "delving").
 
-Match inflected forms ("delve" → "delving").
-
-**Tier 1 — always replace.** Strong AI signal.
+*Tier 1 — always replace.* Strong AI signal.
 
 | Word | Replace with |
 |------|--------------|
@@ -83,7 +82,7 @@ Match inflected forms ("delve" → "delving").
 | impactful | effective (or describe the impact) |
 | revolutionize | change, transform (or describe what changed) |
 
-**Tier 2 — replace when 2+ appear in one paragraph.**
+*Tier 2 — replace when 2+ appear in one paragraph.*
 
 | Word | Replace with |
 |------|--------------|
@@ -98,44 +97,39 @@ Match inflected forms ("delve" → "delving").
 | crucial | important, key |
 | transformative | (describe what changed) |
 
-**Tier 3 — replace only at high density.** "significant", "innovative",
+*Tier 3 — replace only at high density.* "significant", "innovative",
 "effective", "dynamic", "scalable", "compelling", "unprecedented",
 "sophisticated", "state-of-the-art" → replace with specifics (numbers,
 comparisons) or cut. If the text doesn't say what "comprehensive" means,
 delete it. Don't invent specifics.
 
-### 7. Fix sentence-structure tells
+### Structural redundancy — restructure, they repeat or delay meaning
 
-**Binary contrast.** "Not X, but Y" / "It's not X — it's Y" / "Not just X, but
-Y" → state Y directly.
+**Summaries that restate.** "In conclusion", "To sum up", "In summary",
+"Overall", "The future looks bright", "Only time will tell" — and the sentence
+that follows if it repeats.
 
-**Cleft sentences.** "It is X that Y", "What X does is Y" → rewrite directly:
-"It is this approach that works" → "This approach works".
+**Sentence-structure tells.**
 
-**Significance inflation.** "Marking a pivotal moment in the evolution of...",
-"a watershed moment for the industry" → state what happened; let the reader
-judge. If the sentence works after deleting the inflation clause, delete it.
+- *Binary contrast.* "Not X, but Y" / "It's not X — it's Y" / "Not just X, but
+  Y" → state Y directly.
+- *Cleft sentences.* "It is X that Y", "What X does is Y" → rewrite directly:
+  "It is this approach that works" → "This approach works".
+- *Significance inflation.* "Marking a pivotal moment in the evolution of...",
+  "a watershed moment for the industry" → state what happened; let the reader
+  judge. If the sentence works after deleting the inflation clause, delete it.
+- *False agency.* Inanimate objects doing human actions ("the decision
+  emerges", "the culture shifts", "the data tells us") → name the person or use
+  "you". "People tend to..." → "You...".
 
-**False agency.** Inanimate objects doing human actions ("the decision
-emerges", "the culture shifts", "the data tells us") → name the person or use
-"you". "People tend to..." → "You...".
+**Short lists and empty paragraphs.** 2-3 short bullet items → one sentence.
+Paragraphs with no factual claim, opinion, or instruction → cut.
 
-### 8. Remove chatbot artifacts
+### Meta-text — remove, it's about the medium not the message
 
-"I hope this helps!", "Let me know if you have any questions", "Great
-question!", "I'd be happy to help!", "Absolutely!", "Certainly!", "Of course!",
-"Does that make sense?", "Thank you for your patience", "As of my last
-training data...", "Let me think...", "You're asking about X..."
-
-### 9. Remove emoji and decorative markdown
-
-Unless functional (e.g., ⚠️ next to a warning). 🚀✨🔥💡⭐ go. Curly quotes
-(" " ' ') in plain text and code → straight quotes.
-
-### 10. Merge short lists, delete empty paragraphs
-
-2-3 short bullet items → one sentence. Paragraphs with no factual claim,
-opinion, or instruction → cut.
+**Emoji and decorative markdown.** Unless functional (e.g., ⚠️ next to a
+warning). 🚀✨🔥💡⭐ go. Curly quotes (" " ' ') in plain text and code → straight
+quotes.
 
 ## Preserve
 
