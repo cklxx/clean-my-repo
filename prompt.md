@@ -119,6 +119,14 @@ that follows if it repeats.
 **Short lists and empty paragraphs.** 2-3 short bullet items → one sentence.
 Paragraphs with no factual claim, opinion, or instruction → cut.
 
+**Structural bloat.**
+
+- Section header with one short paragraph → merge the paragraph into the parent
+- "Key takeaways" / "Summary" section that repeats what was just said → delete
+- 3+ levels of nesting for 2-3 items → flatten to one level
+- "In this section we will discuss X" → delete (just discuss X)
+- Table of contents for a 2-section doc → delete
+
 ### Meta-text — remove, it's about the medium not the message
 
 **Emoji and decorative markdown.** Unless functional (e.g., ⚠️ next to a
