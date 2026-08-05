@@ -110,6 +110,7 @@ human text.
 | thought leader | expert (or describe their contribution) |
 | game-changer | (describe what changed) |
 | watershed moment | turning point (or cut) |
+| revolutionize | change, transform (or describe what changed) |
 
 **Tier 2 — replace when 2+ appear in the same paragraph.** Individually
 fine, but clustered they're a strong AI signal.
