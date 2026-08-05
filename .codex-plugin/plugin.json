@@ -1,0 +1,36 @@
+{
+  "name": "clean-my-repo",
+  "version": "0.1.0",
+  "description": "Remove AI-generated slop from text. Subtractive only — preserves facts, code, quotes, and the author's voice.",
+  "author": {
+    "name": "cklxx",
+    "url": "https://github.com/cklxx"
+  },
+  "homepage": "https://github.com/cklxx/clean-my-repo",
+  "repository": "https://github.com/cklxx/clean-my-repo",
+  "license": "MIT",
+  "keywords": [
+    "ai-slop",
+    "text-cleaning",
+    "humanize",
+    "writing",
+    "productivity"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Clean My Repo",
+    "shortDescription": "Remove AI-generated slop from text",
+    "longDescription": "Removes AI writing patterns (filler openers, hedging, AI-favorite words, sentence-structure tells, chatbot artifacts) while preserving facts, code, quotes, and the author's voice. Subtractive only — never adds content or rewrites for style.",
+    "developerName": "cklxx",
+    "category": "Productivity",
+    "capabilities": [
+      "Instructions"
+    ],
+    "websiteURL": "https://github.com/cklxx/clean-my-repo",
+    "defaultPrompt": [
+      "Clean up the AI slop in this text.",
+      "Remove AI-isms from this.",
+      "Make this sound less like AI."
+    ]
+  }
+}

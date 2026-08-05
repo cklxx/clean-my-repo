@@ -1,0 +1,16 @@
+{
+  "$schema": "https://www.schemastore.org/claude-code-marketplace.json",
+  "name": "clean-my-repo",
+  "description": "Remove AI-generated slop from text. Subtractive only — preserves facts, code, quotes, and the author's voice.",
+  "owner": {
+    "name": "cklxx"
+  },
+  "plugins": [
+    {
+      "name": "clean-my-repo",
+      "description": "Remove AI-generated slop from text.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "clean-my-repo",
+  "version": "0.1.0",
+  "description": "Remove AI-generated slop from text. Subtractive only — preserves facts, code, quotes, and the author's voice.",
+  "author": {
+    "name": "cklxx",
+    "url": "https://github.com/cklxx"
+  }
+}
